@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.todo-list{
+    list-style-type: none;
+    list-style: none;
+}
+
+.task{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.todo-list > li{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.delete, .done, .edit{
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    height: 30px;
+    width: 30px;
+    font-size: 12px;
+    padding: 0;
+}
+
+.delete:hover{
+    border: 2px solid black;
+    color:grey;
+    background-color: red;
+}
+
+.done:hover{
+    border: 2px solid black;
+    color:grey;
+    background-color: blueviolet;
+}
+
+.task > div, .task > button{
+    padding-right: 10px;
+}
+
+#buttonContainer{
+    margin-top: 10px;
+}
+
+#addButton{
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+#addButton:hover{
+    background-color: greenyellow;
+    border: 2px solid green;
+}
+
+.done-task{
+    background-color:blueviolet;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.25rem;
+}
